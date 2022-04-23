@@ -1,0 +1,55 @@
+.custom-table {
+  background-color: #eee;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.custom-table th {
+  background-color: #000;
+  color: white;
+}
+.custom-table td,
+.custom-table th {
+  padding: 5px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.custom-table th:first-child,
+.custom-table td:first-child {
+  width: 50px;
+}
+
+.custom-table tr.edit td {
+  position: relative;
+}
+
+.custom-table tr.edit td input[type="text"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+}
+
+.control-button {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.delete-button {
+  background-image: url("../img/delete.jpg");
+}
+
+.edit-button {
+  background-image: url("../img/edit.png");
+}
+
+.save-button {
+  background-image: url("../img/save.png");
+}
